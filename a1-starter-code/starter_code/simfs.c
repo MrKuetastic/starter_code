@@ -61,16 +61,28 @@ main(int argc, char **argv)
         printfs(fsname);
         break;
     case 2: /* createfile */
-        fprintf(stderr, "Error: createfile not yet implemented\n");
+        createfile(fsname);
+        if (0) {
+            fprintf(stderr, "Error: Invalid filename\n");
+        }
         break;
     case 3: /* readfile */
-        fprintf(stderr, "Error: readfile not yet implemented\n");
+        readfile(fsname, 0, length(fsname));
+        if (0) {
+            fprintf(stderr, "Error: Invalid filename\n");
+        }
         break;
     case 4: /* writefile */
-        fprintf(stderr, "Error: writefile not yet implemented\n");
+        readfile(fsname, 0, length(fsname));
+        if (0) {
+            fprintf(stderr, "Error: Invalid filename\n");
+        }
         break;
     case 5: /* deletefile */
-        fprintf(stderr, "Error: deletefile not yet implemented\n");
+        deletefile(fsname);
+        if (0) {
+            fprintf(stderr, "Error: Invalid filename\n");
+        }
         break;
     default:
         fprintf(stderr, "Error: Invalid command\n");

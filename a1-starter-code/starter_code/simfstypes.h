@@ -13,3 +13,8 @@ typedef struct file_node {
 #define MAXFILES  8
 #define MAXBLOCKS 32
 #define BLOCKSIZE 128
+
+int createfile(char *filename);
+int deletefile(char *filename);
+int readfile(char *filename, int start, int length);
+int writefile(char *filename, int start, int length);
